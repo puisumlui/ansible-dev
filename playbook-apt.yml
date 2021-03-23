@@ -1,0 +1,10 @@
+---
+- name: Playbook - Install figlet
+  hosts: planetexpress
+
+  tasks:
+  - name: install steam locomotive
+    apt:
+        name: sl
+        state: present
+    become: yes
